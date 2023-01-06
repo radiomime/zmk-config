@@ -34,10 +34,10 @@
                 qwerty_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp LBKT    &kp Q     &kp W     &kp E     &kp R     &kp T     /**/    &kp Y     &kp U      &kp I         &kp O       &kp P        &kp BSPC
+   &kp LBKT    &kp Q     &kp W     &kp E     &kp R     &kp T     /**/    &kp Y     &kp U      &kp I         &kp O       &kp P        &kp LBKT
    &kp TAB     &kp A     &kp S     &kp D     &kp F     &kp G     /**/    &kp H     &kp J      &kp K         &kp L       &kp SEMI     &kp SQT
    &kp LBRC    &kp Z     &kp X     &kp C     &kp V     &kp B     /**/    &kp N     &kp M      &kp COMMA     &kp DOT     &kp FSLH     &kp RBRC
-                                   &kp LGUI  &kp SPACE &mo NUMBER /**/    &mo RAISE &kp RET    &kp RALT
+                                   &kp LGUI  &mo NUMBER &mo NUMBER /**/    &mo RAISE &kp RET    &kp RALT
                         >;
                 };
                 number_layer {
@@ -45,8 +45,8 @@
                         bindings = <
    &kp TAB     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       /**/  &kp N6         &kp N7    &kp N8    &kp N9    &kp N0      &trans
    &trans      &sk LALT     &sk LGUI     &sk LCTRL    &sk LSHIFT   &trans       /**/  &kp LEFT       &kp DOWN  &kp UP    &kp RIGHT &kp TAB     &trans
-   &trans      &kp C_VOL_DN &kp C_PREV   &kp C_PP     &kp C_NEXT   &kp C_VOL_UP /**/  &trans         &trans    &trans    &trans    &trans      &trans
-                          	        &trans     &trans       &trans     &trans  &trans   &trans
+   &trans      &kp C_VOL_DN &kp C_PREV   &kp C_PP     &kp C_NEXT   &kp C_VOL_UP /**/  &trans         &trans    &trans    &trans    &kp BSLH    &trans
+                                         &trans       &trans       &trans             & trans         &trans    &trans
                         >;
                 };
 
@@ -58,11 +58,12 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-   // &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp  TAB  &kp EXCL  &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
+   &kp LCTRL &kp MINUS &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans    &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+
+   // &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
                         >;
                 };
         };
