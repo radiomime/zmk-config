@@ -59,9 +59,9 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans    &kp EXCL  &kp AT &kp HASH &kp DLLR   &kp PRCNT  /**/   &kp CARET   &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR         &trans
-   &trans    &kp MINUS &EQUAL &PLUS    &PIPE      &TILDE     /**/   &trans      &sk LSHIFT   &sk LCTRL    &sk LGUI     &sk LALT          &trans    
-   &trans    &trans    &trans &trans   &kp UNDER  &trans     /**/   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3     &bt BT_SEL 4    
+   &trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR    &kp PRCNT   /**/   &kp CARET   &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR         &trans
+   &trans    &kp MINUS &kp EQUAL &kp PLUS    &kp PIPE    &kp TILDE   /**/   &trans      &sk LSHIFT   &sk LCTRL    &sk LGUI     &sk LALT          &trans    
+   &trans    &trans    &trans    &trans      &kp UNDER   &trans      /**/   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3     &bt BT_SEL 4    
                        &trans          &trans     &trans     /**/   &trans      &kp DEL      &trans
                         >;
                 };
