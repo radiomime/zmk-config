@@ -79,11 +79,6 @@
                 /* right thumb */
                 symbol_layer {
                         label = "SYMBOL";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR    &kp PRCNT   /**/   &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR    &trans
    &trans    &kp MINUS &kp EQUAL &kp PLUS    &kp PIPE    &kp TILDE   /**/   &trans      &sk LSHIFT  &sk LCTRL   &sk LGUI    &sk LALT    &trans
@@ -93,38 +88,25 @@
                 };
 
                 /* both thumbs */
-                symbol_layer {
-                        label = "FUN";
-                        bindings = <
-   &kp F1    &kp F2  &kp F3    &kp F4    &kp F5    &kp F6   /**/   &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-   &trans    &trans  &trans    &trans    &trans    &trans   /**/   &trans      &kp PG_DN     &kp PG_UP     &trans        &trans        &trans
-   &trans    &trans  &trans    &trans    &trans    &trans   /**/   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                               &trans    &trans    &trans   /**/   &trans      &trans        &trans                                    
-                        >;
-                };
+//                symbol_layer {
+//                        label = "FUN";
+//                        bindings = <
+//   &kp F1    &kp F2  &kp F3    &kp F4    &kp F5    &kp F6   /**/   &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+//   &trans    &trans  &trans    &trans    &trans    &trans   /**/   &trans      &kp PG_DN     &kp PG_UP     &trans        &trans        &trans
+//   &trans    &trans  &trans    &trans    &trans    &trans   /**/   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+//                               &trans    &trans    &trans   /**/   &trans      &trans        &trans                                    
+//                        >;
+//                };
 
                 /* combo */
-                symbol_layer {
-                        label = "PAD";
-                        bindings = <
-   &trans    &trans   &kp N1   &kp N2    &kp N3    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
-   &trans    &kp N0   &kp N4   &kp N5    &kp N6    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
-   &trans    &trans   &kp N7   &kp N8    &kp N9    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
-                               &trans    &trans    &trans   /**/   &trans    &trans   &trans                                    
-                        >;
-                };
-
-
-///
-///  [_PAD] = LAYOUT_split_3x6_3(
-///  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-///      XXXXXXX, XXXXXXX,    KC_1,    KC_2,    KC_3, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-///  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-///      _______,    KC_0,    KC_4,    KC_5,    KC_6, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-///  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-///      XXXXXXX, XXXXXXX,    KC_7,    KC_8,    KC_9, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-///  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-///                                          _______, _______, _______,    _______, _______, _______
-///                                      //`--------------------------'  `--------------------------'
+//                 symbol_layer {
+//                         label = "PAD";
+//                         bindings = <
+//    &trans    &trans   &kp N1   &kp N2    &kp N3    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
+//    &trans    &kp N0   &kp N4   &kp N5    &kp N6    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
+//    &trans    &trans   &kp N7   &kp N8    &kp N9    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
+//                                &trans    &trans    &trans   /**/   &trans    &trans   &trans                                    
+//                         >;
+//                 };
         };
 };
