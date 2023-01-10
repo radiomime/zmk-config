@@ -20,6 +20,15 @@
   };
 };
 
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NUMBER SYMBOL>;
+            then-layer = <FUN>;
+        };
+    };
+};
 &sk {
     // release-after-ms = <2000>;
     release-after-ms = <5000>;
