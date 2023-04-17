@@ -40,6 +40,11 @@
             key-positions = <15 16>;
             bindings = <&kp ESC>;
         };
+        combo_pad {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&mo PAD>;
+        };
     };
 };
 
@@ -98,15 +103,15 @@
                         >;
                 };
 
-//                /* combo */
-//                 pad_layer {
-//                         label = "PAD";
-//                         bindings = <
-//    &trans    &trans   &kp N1   &kp N2    &kp N3    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
-//    &trans    &kp N0   &kp N4   &kp N5    &kp N6    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
-//    &trans    &trans   &kp N7   &kp N8    &kp N9    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
-//                                &trans    &trans    &trans   /**/   &trans    &trans   &trans                                    
-//                         >;
-//                 };
+                /* combo */
+                 pad_layer {
+                         label = "PAD";
+                         bindings = <
+    &trans    &trans   &kp N1   &kp N2    &kp N3    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
+    &trans    &kp N0   &kp N4   &kp N5    &kp N6    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
+    &trans    &trans   &kp N7   &kp N8    &kp N9    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
+                                &trans    &trans    &trans   /**/   &trans    &trans   &trans                                    
+                         >;
+                 };
         };
 };
