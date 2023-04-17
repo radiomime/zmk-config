@@ -22,15 +22,15 @@
   };
 };
 
-/ {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NUMBER SYMBOL>;
-            then-layer = <FUN>;
-        };
-    };
-};
+/* / { */
+/*     conditional_layers { */
+/*         compatible = "zmk,conditional-layers"; */
+/*         tri_layer { */
+/*             if-layers = <NUMBER SYMBOL>; */
+/*             then-layer = <FUN>; */
+/*         }; */
+/*     }; */
+/* }; */
 
 / {
     combos {
@@ -57,10 +57,10 @@
                 qwerty_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp LBKT    &kp Q     &kp W     &kp E     &kp R     &kp T     /**/    &kp Y      &kp U      &kp I         &kp O       &kp P        &kp LBKT
-   &kp TAB     &kp A     &kp S     &kp D     &kp F     &kp G     /**/    &kp H      &kp J      &kp K         &kp L       &kp SEMI     &kp SQT
-   &kp LBRC    &kp Z     &kp X     &kp C     &kp V     &kp B     /**/    &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH     &kp RBRC
-                                   &kp LGUI  &kp SPACE &mo NUMBER /**/   &mo SYMBOL &kp RET    &kp RALT
+   &kp LBKT    &kp Q     &kp W     &kp E     &kp R     &kp T      /**/    &kp Y      &kp U      &kp I         &kp O       &kp P        &kp LBKT
+   &kp TAB     &kp A     &kp S     &kp D     &kp F     &kp G      /**/    &kp H      &kp J      &kp K         &kp L       &kp SEMI     &kp SQT
+   &kp LBRC    &kp Z     &kp X     &kp C     &kp V     &kp B      /**/    &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH     &kp RBRC
+                                   &kp LGUI  &kp SPACE &mo NUMBER /**/    &mo SYMBOL  &kp BSPC   &kp RET
                         >;
                 };
 
@@ -88,15 +88,15 @@
                 };
 
                 /* both thumbs */
-                symbol_layer {
-                        label = "FUN";
-                        bindings = <
-   &kp F1    &kp F2  &kp F3    &kp F4    &kp F5    &kp F6   /**/   &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-   &trans    &trans  &trans    &trans    &trans    &trans   /**/   &trans      &kp PG_DN     &kp PG_UP     &trans        &trans        &trans
-   &trans    &trans  &trans    &trans    &trans    &trans   /**/   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                               &trans    &trans    &trans   /**/   &trans      &trans        &trans                                    
-                        >;
-                };
+   /*              symbol_layer { */
+   /*                      label = "FUN"; */
+   /*                      bindings = < */
+   /* &kp F1    &kp F2  &kp F3    &kp F4    &kp F5    &kp F6   /**/   &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12 */
+   /* &trans    &trans  &trans    &trans    &trans    &trans   /**/   &trans      &kp PG_DN     &kp PG_UP     &trans        &trans        &trans */
+   /* &trans    &trans  &trans    &trans    &trans    &trans   /**/   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 */
+   /*                             &trans    &trans    &trans   /**/   &trans      &trans        &trans                                     */
+   /*                      >; */
+   /*              }; */
 
                 /* combo */
 //                 symbol_layer {
