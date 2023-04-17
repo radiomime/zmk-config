@@ -37,7 +37,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <16 17>;
+            key-positions = <15 16>;
             bindings = <&kp ESC>;
         };
     };
@@ -98,8 +98,8 @@
                         >;
                 };
 
-                /* combo */
-//                 symbol_layer {
+//                /* combo */
+//                 pad_layer {
 //                         label = "PAD";
 //                         bindings = <
 //    &trans    &trans   &kp N1   &kp N2    &kp N3    &trans   /**/   &trans    &trans   &trans   &trans      &trans      &trans
