@@ -74,7 +74,7 @@
                 ;
         };
         swap_win: swap_win {
-            label = "swap_app_macro";
+            label = "swap_win_macro";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -114,7 +114,6 @@
                         bindings = <
    &kp TAB     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       /**/  &kp N6         &kp N7    &kp N8    &kp N9    &kp N0      &trans
    &trans      &sk LALT     &sk LGUI     &sk LCTRL    &sk LSHIFT   &swap_app     /**/  &kp LEFT       &kp DOWN  &kp UP    &kp RIGHT &kp TAB     &trans
-                                                                   /* ∆∆∆ todo: this is swap window */
    &trans      &kp C_VOL_DN &kp C_PREV   &kp C_PP     &kp C_NEXT   &kp C_VOL_UP /**/  &trans         &trans    &trans    &trans    &kp BSLH    &trans
                                          &trans       &trans       &trans       /**/  &trans        &kp DEL      &trans
                         >;
