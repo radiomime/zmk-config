@@ -57,6 +57,8 @@
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_pause_for_release>
+                , <&macro_tap &kp M &kp A &kp C>
                 , <&macro_release &kp LSHFT>
                 ;
         };
