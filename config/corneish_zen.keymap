@@ -73,6 +73,17 @@
                 , <&macro_release &kp LGUI>
                 ;
         };
+        swap_win: swap_win {
+            label = "swap_app_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LSHIFT>
+                , <&macro_tap &kp GRAVE>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LGUI &kp LSHIFT>
+                ;
+        };
     };
 };
 
@@ -114,7 +125,7 @@
                         label = "SYMBOL";
                         bindings = <
    &trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR    &kp PRCNT   /**/   &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR    &trans
-   &trans    &kp MINUS &kp EQUAL &kp PLUS    &kp PIPE    &kp TILDE   /**/   &none       &sk LSHIFT  &sk LCTRL   &sk LGUI    &sk LALT    &kp GRAVE
+   &trans    &kp MINUS &kp EQUAL &kp PLUS    &kp PIPE    &kp TILDE   /**/   &swap_win       &sk LSHIFT  &sk LCTRL   &sk LGUI    &sk LALT    &kp GRAVE
    &trans    &trans    &trans    &trans      &kp UNDER   &trans      /**/   &trans      &trans      &trans      &trans      &trans      &trans
                        &trans          &trans     &trans     /**/   &trans      &kp DEL      &trans
                         >;
