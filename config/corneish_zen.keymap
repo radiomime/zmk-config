@@ -67,6 +67,7 @@
             ignored-key-positions = <21>;
         };
     };
+}
 
 &sk {
     // release-after-ms = <2000>;
