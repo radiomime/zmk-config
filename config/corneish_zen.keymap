@@ -125,7 +125,7 @@
                         bindings = <
    &trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR    &kp PRCNT   /**/   &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR    &trans
    &trans    &kp MINUS &kp EQUAL &kp PLUS    &kp PIPE    &kp TILDE   /**/   &swap_win       &sk LSHIFT  &sk LCTRL   &sk LGUI    &sk LALT    &kp GRAVE
-   &trans    &trans    &trans    &trans      &kp UNDER   &trans      /**/   &trans      &trans      &trans      &trans      &trans      &trans
+   &trans    &trans    &trans    &trans      &kp UNDER   &trans      /**/   &trans      &kp CAPSLOCK &trans      &trans      &trans      &trans
                        &trans          &trans     &trans     /**/   &trans      &kp DEL      &trans
                         >;
                 };
