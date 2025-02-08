@@ -123,10 +123,10 @@
                 symbol_layer {
                         label = "SYMBOL";
                         bindings = <
-   &trans    &kp EXCL     &kp AT    &kp HASH    &kp DLLR    &kp PRCNT    /**/   &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR    &trans
-   &trans    &kp MINUS    &kp EQUAL &kp PLUS    &kp PIPE    &kp TILDE    /**/   &swap_win   &sk LSHIFT  &sk LCTRL   &sk LGUI    &sk LALT    &kp GRAVE
-   &trans    &kp C_BRI_DN &trans    &trans      &kp UNDER   &kp C_BRI_UP /**/   &trans      &kp CAPSLOCK &trans      &trans      &trans      &trans
-                       &trans          &trans     &trans     /**/   &trans      &kp DEL      &trans
+   &trans    &kp EXCL     &kp AT    &kp HASH    &kp DLLR    &kp PRCNT     /**/   &kp CARET   &kp AMPS     &kp STAR    &kp LPAR    &kp RPAR    &trans
+   &trans    &kp MINUS    &kp EQUAL &kp PLUS    &kp PIPE    &kp TILDE     /**/   &swap_win   &sk LSHIFT   &sk LCTRL   &sk LGUI    &sk LALT    &kp GRAVE
+   &trans    &kp C_BRI_DN &trans    &trans      &kp UNDER   &kp C_BRI_UP  /**/   &trans      &kp CAPSLOCK &trans      &trans      &trans      &trans
+                                    &trans      &trans      &trans        /**/   &trans      &kp DEL      &trans
                         >;
                 };
 
