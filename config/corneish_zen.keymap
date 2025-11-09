@@ -157,9 +157,9 @@
                  game_layer {
                          label = "GAME";
                          bindings = <
-    &trans    &kp N6   &kp N7   &kp N8    &kp N9    &kp N0    /**/   &trans    &trans   &trans   &trans      &trans      &trans
-    &trans    &trans   &trans   &trans    &trans    &kp H     /**/   &trans    &trans   &trans   &trans      &trans      &trans
-    &trans    &trans   &trans   &trans    &kp M     &trans    /**/   &trans    &trans   &trans   &trans      &trans      &trans
+    &trans     &kp N6   &kp N7   &kp N8    &kp N9    &kp N0    /**/   &kp I     &kp P    &trans   &trans      &trans      &trans
+    &trans     &trans   &trans   &trans    &trans    &kp H     /**/   &kp J     &kp L    &trans   &trans      &trans      &trans
+    &kt LSHIFT &trans  &trans   &trans    &kp M     &kp N     /**/   &trans    &trans   &trans   &trans      &trans      &trans
                                 &trans    &trans    &trans    /**/   &trans    &trans   &trans
                          >;
                  };
