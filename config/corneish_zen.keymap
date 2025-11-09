@@ -154,7 +154,7 @@
                  };
 
                 /* combo */
-                 pad_layer {
+                 game_layer {
                          label = "GAME";
                          bindings = <
     &trans    &kp N6   &kp N7   &kp N8    &kp N9    &kp N0    /**/   &trans    &trans   &trans   &trans      &trans      &trans
