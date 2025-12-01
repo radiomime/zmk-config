@@ -122,19 +122,19 @@
                 number_layer {
                         label = "NUMBER";
                         bindings = <
-//    ┌─────┬──────────┬──────────┬──────────┬──────────┬───────────┐         ┌──────┬──────┬─────┬──────┬─────┬─────┐
-//    │ tab │    1     │    2     │    3     │    4     │     5     │         │  6   │  7   │  8  │  9   │  0  │     │
-//    ├─────┼──────────┼──────────┼──────────┼──────────┼───────────┤         ├──────┼──────┼─────┼──────┼─────┼─────┤
-//    │     │ &sk lalt │ &sk lgui │ &sk lctl │ &sk lsft │ &swap_app │         │ left │ down │ up  │ rght │ tab │     │
-//    ├─────┼──────────┼──────────┼──────────┼──────────┼───────────┤         ├──────┼──────┼─────┼──────┼─────┼─────┤
-//    │     │   vold   │   prev   │   play   │   next   │   volu    │         │      │      │     │      │  \  │     │
-//    └─────┴──────────┴──────────┴──────────┼──────────┼───────────┼─────┐   ├──────┼──────┼─────┼──────┴─────┴─────┘
-//                                           │          │           │     │   │      │ del  │     │
-//                                           └──────────┴───────────┴─────┘   └──────┴──────┴─────┘
-  &kp TAB   &kp N1         &kp N2       &kp N3      &kp N4       &kp N5                      &kp N6     &kp N7     &kp N8   &kp N9      &kp N0     &trans
-  &trans    &sk LALT       &sk LGUI     &sk LCTRL   &sk LSHIFT   &swap_app                   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp TAB    &trans
-  &trans    &kp C_VOL_DN   &kp C_PREV   &kp C_PP    &kp C_NEXT   &kp C_VOL_UP                &trans     &trans     &trans   &trans      &kp BSLH   &trans
-                                                    &trans       &trans         &trans       &trans     &kp DEL    &trans
+//    ┌───────┬──────────┬──────────┬──────────┬──────────┬───────────┐         ┌──────┬──────┬─────┬──────┬─────┬─────┐
+//    │  tab  │    1     │    2     │    3     │    4     │     5     │         │  6   │  7   │  8  │  9   │  0  │     │
+//    ├───────┼──────────┼──────────┼──────────┼──────────┼───────────┤         ├──────┼──────┼─────┼──────┼─────┼─────┤
+//    │       │ &sk lalt │ &sk lgui │ &sk lctl │ &sk lsft │ &swap_app │         │ left │ down │ up  │ rght │ tab │     │
+//    ├───────┼──────────┼──────────┼──────────┼──────────┼───────────┤         ├──────┼──────┼─────┼──────┼─────┼─────┤
+//    │ GLOBE │   vold   │   prev   │   play   │   next   │   volu    │         │      │      │     │      │  \  │     │
+//    └───────┴──────────┴──────────┴──────────┼──────────┼───────────┼─────┐   ├──────┼──────┼─────┼──────┴─────┴─────┘
+//                                             │          │           │     │   │      │ del  │     │
+//                                             └──────────┴───────────┴─────┘   └──────┴──────┴─────┘
+  &kp TAB     &kp N1         &kp N2       &kp N3      &kp N4       &kp N5                      &kp N6     &kp N7     &kp N8   &kp N9      &kp N0     &trans
+  &trans      &sk LALT       &sk LGUI     &sk LCTRL   &sk LSHIFT   &swap_app                   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp TAB    &trans
+  &kp GLOBE   &kp C_VOL_DN   &kp C_PREV   &kp C_PP    &kp C_NEXT   &kp C_VOL_UP                &trans     &trans     &trans   &trans      &kp BSLH   &trans
+                                                      &trans       &trans         &trans       &trans     &kp DEL    &trans
                         >;
                 };
 
