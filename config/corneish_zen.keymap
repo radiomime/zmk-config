@@ -202,19 +202,19 @@
                  game_layer {
                          label = "GAME";
                          bindings = <
-//    ┌─────────┬─────┬─────┬─────┬─────┬─────┐         ┌─────┬─────┬─────┬─────┬─────┬─────┐
-//    │         │  6  │  7  │  8  │  9  │  0  │         │     │     │     │     │     │     │
-//    ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────┤
-//    │  lctl   │     │     │     │     │  H  │         │     │     │     │     │     │     │
-//    ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────┤
-//    │ kt lsft │     │     │     │  M  │  N  │         │     │     │     │     │     │     │
-//    └─────────┴─────┴─────┴─────┼─────┼─────┼─────┐   ├─────┼─────┼─────┼─────┴─────┴─────┘
-//                                │     │     │     │   │     │     │     │
-//                                └─────┴─────┴─────┘   └─────┴─────┴─────┘
-  &trans       &kp N6   &kp N7   &kp N8   &kp N9   &kp N0                &trans   &trans   &trans   &trans   &trans   &trans
-  &kp LCTRL    &trans   &trans   &trans   &trans   &kp H                 &trans   &trans   &trans   &trans   &trans   &trans
-  &kt LSHIFT   &trans   &trans   &trans   &kp M    &kp N                 &trans   &trans   &trans   &trans   &trans   &trans
-                                          &trans   &trans   &trans       &trans   &trans   &trans
+//    ┌─────────┬──────┬──────┬─────┬─────┬─────┐         ┌─────┬─────┬─────┬─────┬─────┬─────┐
+//    │         │  6   │  7   │  8  │  9  │  0  │         │     │     │     │     │     │     │
+//    ├─────────┼──────┼──────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────┤
+//    │  lctl   │ home │ pgup │ end │     │  H  │         │     │     │     │     │     │     │
+//    ├─────────┼──────┼──────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────┤
+//    │ kt lsft │      │ pgdn │     │  M  │  N  │         │     │     │     │     │     │     │
+//    └─────────┴──────┴──────┴─────┼─────┼─────┼─────┐   ├─────┼─────┼─────┼─────┴─────┴─────┘
+//                                  │     │     │     │   │     │     │     │
+//                                  └─────┴─────┴─────┘   └─────┴─────┴─────┘
+  &trans       &kp N6     &kp N7      &kp N8    &kp N9   &kp N0                &trans   &trans   &trans   &trans   &trans   &trans
+  &kp LCTRL    &kp HOME   &kp PG_UP   &kp END   &trans   &kp H                 &trans   &trans   &trans   &trans   &trans   &trans
+  &kt LSHIFT   &trans     &kp PG_DN   &trans    &kp M    &kp N                 &trans   &trans   &trans   &trans   &trans   &trans
+                                                &trans   &trans   &trans       &trans   &trans   &trans
                          >;
                  };
         };
